@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+:root {
+    --blue: #023047;
+    --yellow: #FFB703;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+body {
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #f5f5f5;
+
+}
+
+.logo {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 60px;
+}
+
+.form-signin {
+    max-width: 330px;
+    padding: 15px;
+
+}
+
+
+.form-signin .form-floating:focus-within {
+    z-index: 2;
+}
+
+.top {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.middle {
+    border-radius: 0;
+    margin-bottom: -1px;
+}
+
+.bottom {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.left-side {
+    background-image: url("/images/fathers-day.png");
+    background-repeat: no-repeat;
+    background-color: var(--yellow);
+    height: 100vh;
+    min-width: 30rem;
+    background-size: 120px;
+    background-position: center;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-side .joke {
+ 
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 300px;
+    /* background-color: #fae608a6;
+    border-radius: 14px;
+    padding: 14px; */
+}
+
+.joke h4 {
+    /* color: white; */
+    margin-top: 40px;
+    
+    line-height: 1.5;
+}
+
+.joke h5 {
+    color: white;
+    
+    width: 100%;
+}
+
+.button {
+    background-color: var(--blue);
+    color: white;
+}
+
+.button:hover {
+    transition: all 0.35s ease-in-out;
+}
+
+@media only screen and (max-width: 600px) {
+    .left-side {
+        display: none;
+    }
+}
+
+.go-back-btn {
+    position: absolute;
+    top: 28px;
+    right: 28px;
+    text-decoration: none;
+    background-color: #FFB703;
+    color: white;
+    border-radius: 4px;
+    padding: 4px 12px;
+
+}
+
+.go-back-btn:hover {
+    color:#023047;
+    opacity: 0.9;
+    transition: all 0.35s ease-in-out;
+}

@@ -1,0 +1,17 @@
+{
+  "name": "newsletter-signup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Miguel Fung",
+  "license": "ISC",
+  "dependencies": {
+    "@mailchimp/mailchimp_marketing": "^3.0.75",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.1",
+    "mailchimp-marketing": "^5.0.0"
+  }
+}
