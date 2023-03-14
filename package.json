@@ -9,7 +9,7 @@
   "author": "Miguel Fung",
   "license": "ISC",
   "dependencies": {
-    "@mailchimp/mailchimp_marketing": "^3.0.75",
+    "@mailchimp/mailchimp_marketing": "^3.0.80",
     "dotenv": "^16.0.3",
     "express": "^4.18.1"
   }
