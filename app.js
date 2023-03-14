@@ -36,6 +36,7 @@ app.post("/", (req, res) => {
     const listId = process.env.MAILCHIMP_LIST_ID;
 
     async function run() {
+    
         const response = await client.lists.addListMember(listId, {
             
                     email_address: email,
@@ -50,7 +51,10 @@ app.post("/", (req, res) => {
 
     run()
         .then(() => res.sendFile(__dirname + "/success.html"))
-        .catch((err) =>  res.sendFile(__dirname + "/failure.html"));
+        .catch((err) =>  {
+           
+            res.sendFile(__dirname + "/failure.html")
+        });
 
 
 });
