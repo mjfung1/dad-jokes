@@ -33,15 +33,5 @@ async function getJoke() {
     }
 }
 
-// async function getNewsletterPage() {
-//     console.log("clicked");
-//     try {
-        
-//         await fetch("http://localhost:3001/");
-//     } catch (error) {
-//         console.log({error});
-//     }
-// }
 
-// newsletterBtnEl.addEventListener("click", getNewsletterPage);
 btnEl.addEventListener("click", getJoke);
