@@ -20,40 +20,40 @@ app.get("/", (req, res) => {
     res.sendFile(__dirname + "/signup.html");
 });
 
-// app.post("/", (req, res) => {
+app.post("/", (req, res) => {
 
-//     // connecting/setting up mailchimp
-//     client.setConfig({
-//         apiKey: process.env.MAILCHIMP_API_KEY,
-//         server: process.env.MAILCHIMP_SERVER
-//     });
+    // connecting/setting up mailchimp
+    client.setConfig({
+        apiKey: process.env.MAILCHIMP_API_KEY,
+        server: process.env.MAILCHIMP_SERVER
+    });
 
-//     const firstName = req.body.fName;
-//     const lastName = req.body.lName;
-//     const email = req.body.email;
+    const firstName = req.body.fName;
+    const lastName = req.body.lName;
+    const email = req.body.email;
 
-//     // from mailchimp
-//     const listId = process.env.MAILCHIMP_LIST_ID;
+    // from mailchimp
+    const listId = process.env.MAILCHIMP_LIST_ID;
 
-//     async function run() {
-//         const response = await client.lists.addListMember(listId, {
+    async function run() {
+        const response = await client.lists.addListMember(listId, {
             
-//                     email_address: email,
-//                     status: "subscribed",
-//                     merge_fields: {
-//                         FNAME: firstName,
-//                         LNAME: lastName
-//                     }
+                    email_address: email,
+                    status: "subscribed",
+                    merge_fields: {
+                        FNAME: firstName,
+                        LNAME: lastName
+                    }
           
-//         })
-//     }
+        })
+    }
 
-//     run()
-//         .then(() => res.sendFile(__dirname + "/success.html"))
-//         .catch((err) =>  res.sendFile(__dirname + "/failure.html"));
+    run()
+        .then(() => res.sendFile(__dirname + "/success.html"))
+        .catch((err) =>  res.sendFile(__dirname + "/failure.html"));
 
 
-// });
+});
 
 
 app.post("/failure", (req, res) => {
