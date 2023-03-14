@@ -52,7 +52,7 @@ app.post("/", (req, res) => {
     run()
         .then(() => res.sendFile(__dirname + "/success.html"))
         .catch((err) =>  {
-           
+           console.log({err});
             res.sendFile(__dirname + "/failure.html")
         });
 
