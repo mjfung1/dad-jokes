@@ -48,7 +48,7 @@ app.post("/", (req, res) => {
           
         })
     }
-
+        console.log({response})
     run()
         .then(() => res.sendFile(__dirname + "/success.html"))
         .catch((err) =>  {
