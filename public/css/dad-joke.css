@@ -28,7 +28,7 @@ body {
     text-decoration: none;
     text-align: center;
     font-size: 2rem;
-    transition: all 0.50s ease-in-out;
+    transition: all 0.35s ease-in-out;
 }
 
 .icons div a:hover {
@@ -74,7 +74,7 @@ body {
     margin: 6px;
     color: white;
     margin: 5px;
-    transition: all 300ms ease;
+    transition: all 0.35s ease-in-out;
 }
 
 .container a {
