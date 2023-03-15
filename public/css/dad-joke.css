@@ -11,6 +11,10 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+.heading {
+    color: rgb(160, 95, 25);
+}
+
 .navbar {
     position: fixed;
     top: 40px;
